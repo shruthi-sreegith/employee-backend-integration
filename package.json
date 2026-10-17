@@ -1,0 +1,29 @@
+{
+  "name": "casestudy2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0"
+  }
+}
+```[cite: 1, 8]
+
+5. Click the green **Commit changes...** button at the top right, then click **Commit changes** again[cite: 10].
+
+---
+
+### Step 2: Trigger Render Deployment
+
+1. Go back to your **Render** dashboard[cite: 9].
+2. Go to **Settings**, make sure **Root Directory** is completely **BLANK**, and check that:
+   * **Build Command:** `npm install`[cite: 8]
+   * **Start Command:** `node app.js`[cite: 8]
+3. Click **Deploys** on the left menu, then click **Manual Deploy** $\rightarrow$ **Deploy latest commit**.
+
+Render will now find `package.json`, install `express`, `mongoose`, and `cors`, and build your project to **Live**[cite: 1, 8, 11]!
